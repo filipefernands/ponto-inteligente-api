@@ -3,7 +3,3 @@ jdk:
   - openjdk8
 before_install:
   - chmod +x mvnw
-services:
-  - mysql
-before_install:
-  - mysql -e 'CREATE DATABASE myapp_test;'
