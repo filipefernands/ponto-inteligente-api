@@ -87,6 +87,7 @@ public class LancamentoController {
 	 * @return ResponseEntity<Response<LancamentoDto>>
 	 */
 	@GetMapping(value = "/{id}")
+	@PreAuthorize("hasAnyRole('ADMIN')")
 	public ResponseEntity<Response<LancamentoDto>> listarPorId(@PathVariable("id") Long id) {
 		log.info("Buscando lançamento por ID: {}", id);
 		Response<LancamentoDto> response = new Response<LancamentoDto>();
