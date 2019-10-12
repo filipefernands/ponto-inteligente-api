@@ -6,4 +6,4 @@ before_install:
 services:
   - mysql
 before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS ponto_inteligente;'
+  - mysql -e 'CREATE DATABASE myapp_test;'
